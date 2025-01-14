@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+section.hero {
+    background: linear-gradient(to right, #94c0eb, #ffffff);
+}
+
+.title{
+    color: #124472;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-modal{
+  width: 50px;
+  height: 50px;
+  background-color: #155188;
+  color: white;
+  margin-top: -38px;
+  margin-right: -38px;
+}
+.mt-auto {
+  margin-bottom: -40px;
+}
+.btn-modal:hover{
+  width: 50px;
+  height: 50px;
+  background-color: #195996;
+  color: white;
+  margin-top: -38px;
+  margin-right: -38px;
+  transition: .3s ease-out;
+  border: none;
+}
+  .btn-register {
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  background-color: #124472;
+  color: #fff;
+}
+
+.btn-register:hover {
+    background-color: #155188;
+    color: #fff;
+  }
+  .btn-buku {
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .btn-buku:hover {
+      background-color: #195996;
+      color: #fff;
+    }
+
+.btn-book {
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    border: 2px solid #124472;
+    color: #124472;
+    background-image: linear-gradient(to right, #124472 0%, #124472 50%, transparent 50%, transparent 100%);
+    background-size: 200% 100%;
+    background-position: right center;
+    transition: background-position 0.5s ease-in-out;
+  }
+  
+  .btn-book:hover {
+    background-position: left center;
+    color: white;
+  }  
+
+.btn-login{
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  
+  
+}
+.navbar{
+    
+    background: linear-gradient(to right, #94c0eb, #fff);
+}
+.puter{
+    
+  background: linear-gradient(to right, #94c0eb, #ffffff);
+}
+
+.navbar li .btn-login {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar li .btn-login:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 25%;
+  background-color: #124472;
+  transition:  0.2s ease-in-out, left 0.2s ease-in-out;
+  transform: translateX(-50%);
+  
+}
+.navbar li .btn-login:hover:after {
+  width: 50%;
+  left: 50%;
+}
+
+.navbar li .nav-huy {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar li .nav-huy:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: #000000;
+  transition:  0.2s ease-in-out, left 0.2s ease-in-out;
+  transform: translateX(-50%);
+  
+}
+.navbar li .nav-huy:hover:after {
+  width: 50%;
+  left: 50%;
+}
+
+.badge1{
+    color: #124472;
+    background-color: #82b7ec;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+/* alasam */
+.alasan{
+    background-color: #fff;
+    margin-top: -100px;
+    border-radius: 20px;
+}
+.icon{
+    font-size: 38px;
+    color: #124472;
+}
+
+/* Buku */
+.image-book{
+    border-radius: 16px;
+    
+    max-height: 400px; /* Sesuaikan tinggi maksimum yang diinginkan */
+    object-fit: cover;
+}
+
+.isi-gambar{
+    background-color: white;
+    margin-top: -100px;
+    border-radius: 16px;
+
+
+}
+
+.card-book{
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+.card-book:hover{
+    background-color: #b2d3f3;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: .3s ease-in-out;
+}
+
+.nomer{
+    background-color: #124472;
+    color: white;
+    padding: 8px;
+    border-radius: 100%;
+    display: block;
+    margin-bottom: 8px;
+    width: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.position-relative:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  display: none;
+  color: white;
+  text-decoration: none;
+  background-color: #124472;
+  padding: 8px 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.position-relative:hover .overlay a {
+  display: block;
+  opacity: 1;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.shadow-card{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
